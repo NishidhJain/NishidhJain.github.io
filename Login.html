@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	
+	<style type="text/css">
+		*
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body
+		{
+			display: flex;
+		}
+		.left
+		{
+			height: 100vh;
+			width: 75%;
+			/*background-image: url('https://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/201212/167824550.jpg');*/
+			background-image: url('https://c4.wallpaperflare.com/wallpaper/295/743/644/flower-headphones-coffee-laptop-wallpaper-preview.jpg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.right
+		{
+			height: 100vh;
+			width: 40%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.login
+		{
+			width: 55%;
+			background-color: rgb(244,244,244);
+			border-radius: 25px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 60px 20px;
+		}
+	
+		input
+		{
+			height: 40px;
+			width: 80%;
+			margin: 10px 10px;
+			border: 1px solid grey;
+			border-radius: 10px;
+		}
+		input[type=email], [type=password]
+		{
+			text-indent: 10px;
+		}
+		input[type=submit]
+		{
+			background-color: #222831;
+			color: #fff;
+			font-weight: bolder;
+			font-size: 15px;
+		}
+		p
+		{
+			font-size: 15px;
+			margin: 13px;
+			font-weight: bolder;
+		}
+		a
+		{
+			text-decoration: none;
+		}
+		
+		@media only screen and (max-width: 767px)
+		{
+			.left
+			{
+				display: none;
+			}
+			.right
+			{
+				width: 100%;
+			}
+			.login
+			{
+				width: 50%;
+			}
+		}
+		@media only screen and (max-width: 550px)
+		{
+			.left
+			{
+				display: none;
+			}
+			.right
+			{
+				width: 100%;
+			}
+			.login
+			{
+				width: 70%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="left"></div>
+
+	<div class="right">
+		
+		<!-- <img src="C:\Users\jainn\Desktop\Logo.png" alt="logo" height="80px" width="200px" class=""> -->
+		<form class="p-5 login">
+			<h2 align="center" class="">SIGN IN</h2>
+			<br /><br /><br />
+			
+		    <input type="email" class="" placeholder="Email Address">
+		    <input type="password" class="" placeholder="Password" >
+		    <input type="submit" class="" value="Log In">
+
+		  	<p align="center" class="">Don't have an account?</p>
+			<center><a href="" class="">Sign Up</a></center>
+		</form>
+		
+	</div>
+</body>
+</html>
