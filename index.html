@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TEmplate</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			overflow-x: hidden;
+		}
+		hr
+		{
+			margin: 0;
+			background-color: lightgrey;
+		}
+		nav
+		{
+			position: relative;
+			height: 10vh;
+			width: 100%;
+			/*background-color: #f1f3f4;*/
+			background-color: white;
+			padding: 0 200px;
+
+		}
+		.top
+		{
+			position: relative;
+			width: 100%;
+			height: 90vh;
+			background-image: url('/Images/background.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-end;
+			flex-direction: column;
+			padding: 150px 200px;
+			/*margin-top: 10vh;*/
+
+		}
+		.top-data
+		{
+			/*width: 500px;
+*/			position: relative;
+			/*background-color: black;*/
+			font-family: 'Lobster', cursive;
+		}
+		.top-data h1
+		{
+			letter-spacing: 3px;
+			font-weight: 700px;
+			font-size: 70px;
+			overflow-y: hidden;
+		}
+		.top-data h4
+		{
+			letter-spacing: 3px;
+			font-weight: 500px;
+			font-size: 25px;
+		}
+		.quiz-btn
+		{
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			width: 50%;
+			height: 400px;
+
+		}
+		.quiz-btn button
+		{
+			font-size: 40px;
+			letter-spacing: 2px;
+			font-weight: bold;
+		}
+		.mid
+		{
+			/*height: 110vh;*/
+		}
+		.topic
+		{
+			font-family: 'Lobster', cursive;
+		}
+		.mid-data
+		{
+			padding: 20px;
+			height: 90vh;
+			align-items: center;
+		}
+		.mid-data:nth-child(odd)
+		{
+			background-color: #eeeeee;
+		}
+		.data
+		{
+			padding: 50px;
+		}
+		.data h3
+		{
+			color: #400082;
+			font-size: 35px;
+			font-family: 'Lobster', cursive;
+			padding: 10px;
+	
+		}
+		.data p
+		{
+			color: #c82121;
+			padding: 10px;
+			font-size: 25px;
+			font-family: 'Lobster', cursive;
+			letter-spacing: 2px;
+			word-spacing: 3px;
+		}
+		.benefits
+		{
+			border-radius: 20px;
+			font-family: 'Lobster', cursive;
+			letter-spacing: 2px;
+			word-spacing: 3px;
+			padding: 10px;
+		}
+		.benefits h3
+		{
+			font-size: 35px;
+			padding: 5px;
+			color: #00005c
+		}
+		.benefits p
+		{
+			font-size: 25px;
+			padding: 5px;
+			color: #035aa6;		
+		}
+		span
+		{
+			color: white;
+			margin: 0px 60px;
+			font-size: 30px;
+			/*background-color: lightgrey;*/
+			padding: 15px;
+			border-radius: 50%;
+		}
+		.CTA h4
+		{
+			font-size: 40px;
+			/*font-family: 'Lobster', cursive;*/
+		}
+		.CTA a{
+			font-size: 30px;
+			border-radius: 35px;
+			padding: 15px;
+			margin-top: 5px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="d-flex align-items-center shadow-lg">
+		<div class="logo">
+			<img src="Images/logo1.png" alt="logo" height="80px" width="200px">
+		</div>
+		<div class="header-right ml-auto d-flex h-100 align-items-center p-4">
+			<a class="btn btn-primary btn-lg mr-4" href="Login.html">Log In</a>
+			<button class="btn btn-success btn-lg text-white">Register</button>
+		</div>
+	</nav>
+	<div class="top text-white">
+		<!-- <img src="C:\Users\jainn\Downloads\Quiz4.jpg" width="100%" height="100%"> -->
+		<div class="top-data">
+			<h1>Want To Create A Quiz?</h1>
+			<h4>Create a quiz and engage your students.</h4>
+		</div>
+		<div class="quiz-btn">
+			<button class="btn btn-danger btn-lg text-white w-50 h-25">Create Quiz</button>
+		</div>
+	</div>
+
+	<div class="mid">
+		<h1 align="center" class="topic p-5">Our Features</h1>
+		<div class="d-flex mid-data">
+			<!-- <img src="C:\Users\jainn\Downloads\Quizz.png" width="80%" height="80%" alt="Quiz" class="col-6"> -->
+			<img src="Images\CQ.png" width="80%" height="80%" alt="Quiz" class="col-6">
+			<div class="col-6 d-flex flex-column justify-content-center align-items-start data">
+				<h3>Create Quiz</h3>
+				<p>Teacher can create a multiple choice quiz, assign the quiz to the students, and can see the results of all students.</p>
+			</div>
+		</div>
+		<div class="d-flex mid-data">
+			<div class="col-6 d-flex flex-column justify-content-center align-items-start data">
+				<h3>Add Timer</h3>
+				<p>Teacher can add timer for particular quiz, so that students have to finish the quiz in time limit. Otherwise quiz will be submitted automatically.</p>
+			</div>
+			<img src="C:\Users\jainn\Desktop\Internship\SS1\AT2.png" alt="Quiz" class="col-6" width="80%" height="80%">
+		</div>	
+		<div class="bg-warning">
+		<h1 align="center" class="topic p-5">Benefits of Online Quiz</h1>
+		<div class="p-5 card-deck">
+			<div class="benefits shadow card">
+				<div class="card-body">
+				<h3>Engage your audience</h3>
+				<p>Engage your audience in a unique and fun way and connect them to your brand or learning material. By creating a returning event, you will improve your consumer loyalty.</p>
+			</div>
+			</div>
+			<div class="benefits shadow card">
+				<div class="card-body">
+				<h3>Set timer</h3>
+				<p>The creator is able to set a timer for the whole quiz. This is possible to do with written quizzes, but is very time consuming for the instructor. Plus it’s almost impossible to do with a huge amount of participants.</p>
+			</div>
+
+			</div>
+			<div class="benefits shadow card">
+				<div class="card-body">
+				<h3>Better overview</h3>
+				<p>It’s possible to show one question at the time with online quizzes. </p>
+				</div>
+			</div>
+		</div>	
+		</div>
+	</div>
+	<footer class="bg-dark text-white">
+		<div class="p-5 d-flex justify-content-center">
+			<div class="CTA">
+				<h4 class="p-4">Create your quiz for free and engage your audience</h4>
+				<center><a href="" class="btn btn-lg btn-danger">Get Started for Free</a></center>
+			</div>
+		</div>
+		<hr />
+		<div class="d-flex justify-content-center p-2">
+			<span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+			<span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+			<span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+			<span><i class="fa fa-instagram" aria-hidden="true"></i></span>		
+		</div>
+		<!-- <center><img src="C:\Users\jainn\Downloads\tplg1.png" alt="logo" class="m-3"></center> -->
+		<center><img src="C:\Users\jainn\Desktop\Internship\darkbglg2.png" alt="logo" class="m-3"></center>
+		
+	</footer>
+	
+</body>
+</html>
